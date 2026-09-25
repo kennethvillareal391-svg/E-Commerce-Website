@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Customer Service | Breath Inc.</title>
+
+    <link rel="stylesheet" href="../main-styles.css">
+    <link rel="stylesheet" href="customer-service.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- =====NAVIGATION BAR===== -->
+
+    <div class="navbar">
+        <div class="logo">
+            Breath Inc.
+        </div>
+
+        <div class="nav-links">
+            <div class="dropdown">
+                <button type="button" class="dropdown-toggle">
+                    Go to <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+                <div class="dropdown-menu">
+                    <a href="../index.html">
+                        <i class="fa-solid fa-home"></i> Homepage
+                    </a>
+                    <a href="../customer-service/customer-service.html#contact">
+                        <i class="fa-solid fa-envelope"></i> Contact Us
+                    </a>
+                    <a href="../customer-service/customer-service.html#shipping">
+                        <i class="fa-solid fa-truck"></i> Shipping &amp; Returns
+                    </a>
+                    <a href="../customer-service/customer-service.html#faq">
+                        <i class="fa-solid fa-circle-question"></i> FAQ
+                    </a>
+                    <a href="../customer-service/customer-service.html#track">
+                        <i class="fa-solid fa-box"></i> Track Order
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =====PAGE HERO===== -->
+
+    <div class="cs-hero">
+        <h1>How can we help?</h1>
+        <p>Everything you need to know about ordering, shipping, and getting support.</p>
+
+        <div class="cs-hero-nav">
+            <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact Us</a>
+            <a href="#shipping"><i class="fa-solid fa-truck"></i> Shipping &amp; Returns</a>
+            <a href="#faq"><i class="fa-solid fa-circle-question"></i> FAQ</a>
+            <a href="#track"><i class="fa-solid fa-box"></i> Track Order</a>
+        </div>
+    </div>
+
+    <main class="cs-main">
+
+        <!-- =====CONTACT US===== -->
+
+        <section id="contact" class="cs-section">
+
+            <div class="cs-section-header">
+                <span class="cs-icon"><i class="fa-solid fa-envelope"></i></span>
+                <div>
+                    <h2>Contact Us</h2>
+                    <p>We usually reply within 24 hours on weekdays.</p>
+                </div>
+            </div>
+
+            <div class="cs-contact-grid">
+
+                <div class="cs-contact-cards">
+
+                    <div class="cs-info-card">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p>(02) 8123 4567</p>
+                            <span>Mon&ndash;Fri, 9AM&ndash;6PM</span>
+                        </div>
+                    </div>
+
+                    <div class="cs-info-card">
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                        <div>
+                            <h3>Email Us</h3>
+                            <p>support@breathinc.com</p>
+                            <span>Replies within 24 hrs</span>
+                        </div>
+                    </div>
+
+                    <div class="cs-info-card">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h3>Visit Us</h3>
+                            <p>123 Serenity Ave, Quezon City</p>
+                            <span>By appointment only</span>
+                        </div>
+                    </div>
+
+                    <div class="cs-info-card">
+                        <i class="fa-brands fa-facebook-messenger"></i>
+                        <div>
+                            <h3>Live Chat</h3>
+                            <p>Message us on Facebook</p>
+                            <span>Fastest response time</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <form class="cs-contact-form" action="#">
+
+                    <div class="cs-form-row">
+                        <div class="cs-form-group">
+                            <label for="cs-name">Full Name</label>
+                            <input type="text" id="cs-name" name="name" placeholder="Juan Dela Cruz" required>
+                        </div>
+
+                        <div class="cs-form-group">
+                            <label for="cs-email">Email Address</label>
+                            <input type="email" id="cs-email" name="email" placeholder="you@email.com" required>
+                        </div>
+                    </div>
+
+                    <div class="cs-form-group">
+                        <label for="cs-subject">Subject</label>
+                        <input type="text" id="cs-subject" name="subject" placeholder="Order inquiry, product question, etc.">
+                    </div>
+
+                    <div class="cs-form-group">
+                        <label for="cs-message">Message</label>
+                        <textarea id="cs-message" name="message" rows="5" placeholder="Tell us how we can help..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="cs-submit-btn">
+                        Send Message <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <!-- =====SHIPPING & RETURNS===== -->
+
+        <section id="shipping" class="cs-section cs-section-alt">
+
+            <div class="cs-section-header">
+                <span class="cs-icon"><i class="fa-solid fa-truck"></i></span>
+                <div>
+                    <h2>Shipping &amp; Returns</h2>
+                    <p>What to expect once you place an order.</p>
+                </div>
+            </div>
+
+            <div class="cs-columns">
+
+                <div class="cs-column">
+                    <h3><i class="fa-solid fa-box-open"></i> Shipping Options</h3>
+
+                    <ul class="cs-list">
+                        <li>
+                            <strong>Standard Shipping</strong>
+                            <span>3&ndash;5 business days &mdash; Free over $50</span>
+                        </li>
+                        <li>
+                            <strong>Express Shipping</strong>
+                            <span>1&ndash;2 business days &mdash; $15</span>
+                        </li>
+                        <li>
+                            <strong>Store Pickup</strong>
+                            <span>Ready within 2 hours &mdash; Free</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="cs-column">
+                    <h3><i class="fa-solid fa-rotate-left"></i> Returns &amp; Exchanges</h3>
+
+                    <ul class="cs-list">
+                        <li>
+                            <strong>30-Day Window</strong>
+                            <span>Unused items in original packaging</span>
+                        </li>
+                        <li>
+                            <strong>Free Return Shipping</strong>
+                            <span>On all defective or wrong items</span>
+                        </li>
+                        <li>
+                            <strong>Refund Timeline</strong>
+                            <span>5&ndash;7 business days after inspection</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="cs-steps">
+                <h3>How to Start a Return</h3>
+
+                <div class="cs-steps-track">
+                    <div class="cs-step">
+                        <span class="cs-step-num">1</span>
+                        <p>Go to Track Order and locate your purchase</p>
+                    </div>
+                    <div class="cs-step">
+                        <span class="cs-step-num">2</span>
+                        <p>Select "Request Return" and choose a reason</p>
+                    </div>
+                    <div class="cs-step">
+                        <span class="cs-step-num">3</span>
+                        <p>Pack the item securely with all original tags</p>
+                    </div>
+                    <div class="cs-step">
+                        <span class="cs-step-num">4</span>
+                        <p>Drop off using the prepaid shipping label</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- =====FAQ===== -->
+
+        <section id="faq" class="cs-section">
+
+            <div class="cs-section-header">
+                <span class="cs-icon"><i class="fa-solid fa-circle-question"></i></span>
+                <div>
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Quick answers to common questions.</p>
+                </div>
+            </div>
+
+            <div class="cs-faq-list">
+
+                <details class="cs-faq-item">
+                    <summary>What materials are your products made of?</summary>
+                    <p>Each variant is crafted from durable, skin-safe materials designed to stay comfortable with
+                    everyday use. Specific material details are listed on each product page.</p>
+                </details>
+
+                <details class="cs-faq-item">
+                    <summary>Can I change or cancel my order after checkout?</summary>
+                    <p>Orders can be modified or cancelled within 1 hour of purchase. After that, your order enters
+                    processing and can no longer be changed, but you may still request a return once delivered.</p>
+                </details>
+
+                <details class="cs-faq-item">
+                    <summary>Do you ship internationally?</summary>
+                    <p>Currently we only ship within the Philippines. We're working on expanding to more regions
+                    soon &mdash; sign up for our newsletter to be the first to know.</p>
+                </details>
+
+                <details class="cs-faq-item">
+                    <summary>How do I know which color or finish to choose?</summary>
+                    <p>Every product page includes a full description of each finish's look and feel. If you're
+                    still unsure, our support team is happy to help you decide &mdash; just reach out through the
+                    Contact Us form.</p>
+                </details>
+
+                <details class="cs-faq-item">
+                    <summary>What payment methods do you accept?</summary>
+                    <p>We accept major credit and debit cards, GCash, Maya, and cash on delivery for select areas.</p>
+                </details>
+
+                <details class="cs-faq-item">
+                    <summary>Is there a warranty on Breath Inc. products?</summary>
+                    <p>Yes, all products come with a 6-month warranty against manufacturing defects. Normal wear and
+                    tear is not covered.</p>
+                </details>
+
+            </div>
+
+        </section>
+
+        <!-- =====TRACK ORDER===== -->
+
+        <section id="track" class="cs-section cs-section-alt">
+
+            <div class="cs-section-header">
+                <span class="cs-icon"><i class="fa-solid fa-box"></i></span>
+                <div>
+                    <h2>Track Your Order</h2>
+                    <p>Enter your order details below to see the latest status.</p>
+                </div>
+            </div>
+
+            <form class="cs-track-form" action="#">
+
+                <div class="cs-form-group">
+                    <label for="order-number">Order Number</label>
+                    <input type="text" id="order-number" name="order-number" placeholder="e.g. BI-102934" required>
+                </div>
+
+                <div class="cs-form-group">
+                    <label for="order-email">Email Address</label>
+                    <input type="email" id="order-email" name="order-email" placeholder="you@email.com" required>
+                </div>
+
+                <button type="submit" class="cs-submit-btn">
+                    Track Order <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+            </form>
+
+            <div class="cs-track-status">
+
+                <div class="cs-track-line">
+                    <div class="cs-track-point done">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Order Placed</span>
+                    </div>
+                    <div class="cs-track-point done">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Processing</span>
+                    </div>
+                    <div class="cs-track-point active">
+                        <i class="fa-solid fa-truck"></i>
+                        <span>Shipped</span>
+                    </div>
+                    <div class="cs-track-point">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Delivered</span>
+                    </div>
+                </div>
+
+                <p class="cs-track-note">Sample tracker shown &mdash; enter your order number above for real-time status.</p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- =====FOOTER===== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-col footer-brand">
+                <h2 class="footer-logo">Breath Inc.</h2>
+                <p class="footer-tagline">
+                    Thoughtfully designed products, crafted with quality
+                    and comfort in mind.
+                </p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="customer-service.html#contact">Contact Us</a></li>
+                    <li><a href="customer-service.html#shipping">Shipping &amp; Returns</a></li>
+                    <li><a href="customer-service.html#faq">FAQ</a></li>
+                    <li><a href="customer-service.html#track">Track Order</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-newsletter">
+                <h3>Stay Updated</h3>
+                <p>Subscribe for exclusive offers and updates.</p>
+                <form class="newsletter-form" action="#">
+                    <input type="email" placeholder="Your email" name="newsletter-email" required>
+                    <button type="submit">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Breath Inc. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+    <script src="../javascript_main/navbar-script.js"></script>
+</body>
+</html>

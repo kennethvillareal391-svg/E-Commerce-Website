@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Breath Inc.</title>
+
+    <link rel="stylesheet" href="main-styles.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Skip link for keyboard / screen reader users -->
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <!-- =====NAVIGATION BAR===== -->
+
+    <div class="navbar">
+        <div class="logo">
+            Breath Inc.
+        </div>
+
+        <div class="search-box-section">
+            <form class="search-box" action="#">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+        <div class="nav-links">
+            <div class="dropdown">
+                <button type="button" class="dropdown-toggle">
+                    Go to<i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+                <div class="dropdown-menu">                
+                    <a href="customer-service/customer-service.html#contact">
+                        <i class="fa-solid fa-envelope"></i> Contact Us
+                    </a>
+                    <a href="customer-service/customer-service.html#shipping">
+                        <i class="fa-solid fa-truck"></i> Shipping &amp; Returns
+                    </a>
+                    <a href="customer-service/customer-service.html#faq">
+                        <i class="fa-solid fa-circle-question"></i> FAQ
+                    </a>
+                    <a href="customer-service/customer-service.html#track">
+                        <i class="fa-solid fa-box"></i> Track Order
+                    </a>
+                </div>
+            </div>
+
+            <a href="view-cart/view-cart.html" class="cart-link" aria-label="View cart, 0 items">
+                <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- =====CAROUSEL===== -->
+
+    <div class="hero-carousel">
+
+        <div class="carousel-track">
+
+            <div class="carousel-slide">
+                <img src="images/ad-image.png" alt="Promo banner 1">
+            </div>
+
+            <div class="carousel-slide">
+                <img src="images/ad-image2.png" alt="Promo banner 2">
+            </div>
+
+            <div class="carousel-slide">
+                <img src="images/ad-image3.png" alt="Promo banner 3">
+            </div>
+
+            <div class="carousel-slide">
+                <img src="images/ad-image4.png" alt="Promo banner 4">
+            </div>
+
+            <div class="carousel-slide">
+                <img src="images/ad-image5.png" alt="Promo banner 5">
+            </div>
+
+        </div>
+
+        <button class="carousel-btn prev" aria-label="Previous slide">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <button class="carousel-btn next" aria-label="Next slide">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <div class="carousel-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+            <span class="dot" data-index="3"></span>
+            <span class="dot" data-index="4"></span>
+        </div>
+
+    </div>
+
+    <!-- =====PRODUCT IMAGES===== -->
+
+    <main id="main-content" class="products">
+
+       <section class="product-container" data-product-id="product1">
+            
+            <div class="text-container">
+
+                <h1 class="productName">Sand White</h1>
+
+                <p class="description">
+                    Features a soft, 
+                    neutral finish that gives the product a clean and minimalist appearance. 
+                    Its simple and elegant color allows it to blend naturally with different interiors, 
+                    making it an excellent choice for users who prefer a subtle and timeless design. 
+                    The smooth white tone creates a sense of cleanliness and simplicity while maintaining a modern look.
+                </p>
+                
+                <button type="button" class="addCart" data-name="Sand White" data-price="54.00" data-image="images/product1.png">
+                    ADD TO CART
+                </button>
+
+            </div>
+
+            <div class="productImg">
+                
+                <img src="images/product1.png">
+
+            </div>
+
+       </section>
+
+       <section class="product-container" data-product-id="product2">
+            
+            <div class="text-container">
+
+                <h1 class="productName">Stone Gray</h1>
+
+                <p class="description">
+                    combines a sophisticated gray finish with a calm and balanced appearance. 
+                    Its neutral tone makes it easy to match with both modern and traditional surroundings, 
+                    while its understated design gives the product a professional and refined feel. 
+                    It is ideal for users who want something stylish without being too bold.
+                </p>
+                
+                <button type="button" class="addCart" data-name="Stone Gray" data-price="54.00" data-image="images/product2.png">
+                    ADD TO CART
+                </button>
+
+            </div>
+
+            <div class="productImg">
+                
+                <img src="images/product2.png">
+
+            </div>
+
+       </section>
+
+       <section class="product-container" data-product-id="product3">
+            
+            <div class="text-container">
+
+                <h1 class="productName">Mint Green</h1>
+
+                <p class="description">
+                    offers a fresh and soothing appearance inspired by the relaxing qualities of nature. 
+                    Its gentle green tone adds a refreshing touch to the product while creating a peaceful and comfortable visual experience. 
+                    This variant is perfect for users who enjoy soft colors and a light, calming aesthetic.
+                </p>
+                
+                <button type="button" class="addCart" data-name="Mint Green" data-price="54.00" data-image="images/product3.png">
+                    ADD TO CART
+                </button>
+
+            </div>
+
+            <div class="productImg">
+                
+                <img src="images/product3.png">
+
+            </div>
+
+       </section>
+
+       <section class="product-container" data-product-id="product4">
+            
+            <div class="text-container">
+
+                <h1 class="productName">Lavender Mist</h1>
+
+                <p class="description">
+                    features a delicate lavender finish designed to create a soft, peaceful, and relaxing appearance. 
+                    Its subtle purple tone adds a touch of elegance without overwhelming the surrounding space. 
+                    This variant is well suited for users who prefer gentle, calming colors with a slightly sophisticated character.
+                </p>
+                
+                <button type="button" class="addCart" data-name="Lavender Mist" data-price="56.00" data-image="images/product4.png">
+                    ADD TO CART
+                </button>
+
+            </div>
+
+            <div class="productImg">
+                
+                <img src="images/product4.png">
+
+            </div>
+
+       </section>
+
+       <section class="product-container" data-product-id="product5">
+            
+            <div class="text-container">
+
+                <h1 class="productName">Rose Blush</h1>
+
+                <p class="description">
+                    presents a warm and gentle pink finish that gives the product a welcoming and charming appearance. 
+                    Its soft color adds personality while maintaining a refined and modern aesthetic. 
+                    This variant is a great choice for users who want a product that feels cozy, friendly, 
+                    and visually appealing.
+                </p>
+                
+                <button type="button" class="addCart" data-name="Rose Blush" data-price="56.00" data-image="images/product5.png">
+                    ADD TO CART
+                </button>
+
+            </div>
+
+            <div class="productImg">
+                
+                <img src="images/product5.png">
+
+            </div>
+
+       </section>
+
+       <section class="product-container" data-product-id="product6">
+            
+            <div class="text-container">
+
+                <h1 class="productName">Midnight Blue</h1>
+
+                <p class="description">
+                    features a deep blue finish that gives the product a sophisticated and focused appearance. 
+                    Its rich color creates a strong visual presence while maintaining a calm and professional feel. 
+                    This variant is ideal for users who prefer darker colors and a design that feels confident and refined.
+                </p>
+                
+                <button type="button" class="addCart" data-name="Midnight Blue" data-price="58.00" data-image="images/product6.png">
+                    ADD TO CART
+                </button>
+
+            </div>
+
+            <div class="productImg">
+                
+                <img src="images/product6.png">
+
+            </div>
+
+       </section>
+
+       <section class="product-container" data-product-id="product7">
+            
+            <div class="text-container">
+
+                <h1 class="productName">Obsidian Black</h1>
+
+                <p class="description">
+                    delivers a sleek and powerful appearance through its deep black finish. 
+                    The bold color gives the product a modern and premium character while allowing it to stand out in any setting. 
+                    It is an excellent choice for users who appreciate minimalist designs with a strong, sophisticated presence.
+                </p>
+                
+                <button type="button" class="addCart" data-name="Obsidian Black" data-price="58.00" data-image="images/product7.png">
+                    ADD TO CART
+                </button>
+
+            </div>
+
+            <div class="productImg">
+                
+                <img src="images/product7.png">
+
+            </div>
+
+       </section>
+
+       <section class="product-container" data-product-id="product8">
+            
+            <div class="text-container">
+
+                <h1 class="productName">Terrazzo Stone</h1>
+
+                <p class="description">
+                    features a distinctive speckled pattern that gives the product a unique and artistic appearance. 
+                    Its combination of light tones and scattered dark details creates a natural yet modern aesthetic that stands out from traditional solid-color designs. 
+                    This variant is perfect for users looking for something stylish, creative, and different.
+                </p>
+                
+                <button type="button" class="addCart" data-name="Terrazzo Stone" data-price="68.00" data-image="images/product8.png">
+                    ADD TO CART
+                </button>
+
+            </div>
+
+            <div class="productImg">
+                
+                <img src="images/product8.png">
+
+            </div>
+
+       </section>
+
+       <section class="product-container" data-product-id="product9">
+            
+            <div class="text-container">
+
+                <h1 class="productName">Wood Grain</h1>
+
+                <p class="description">
+                    combines the functionality of the product with the warm and natural appearance of wood. 
+                    Its realistic wood-inspired texture creates an earthy and inviting aesthetic that can complement a variety of interiors. 
+                    This variant is ideal for users who enjoy natural materials and want a warmer, more organic-looking design.
+                </p>
+                
+                <button type="button" class="addCart" data-name="Wood Grain" data-price="72.00" data-image="images/product9.png">
+                    ADD TO CART
+                </button>
+
+            </div>
+
+            <div class="productImg">
+                
+                <img src="images/product9.png">
+
+            </div>
+
+       </section>
+
+       <section class="product-container" data-product-id="product10">
+            
+            <div class="text-container">
+
+                <h1 class="productName">Marble White</h1>
+
+                <p class="description">
+                    features an elegant white finish with subtle marble-inspired patterns that create a luxurious and timeless appearance. 
+                    Its refined design adds sophistication while maintaining a clean and modern look. 
+                    This variant is perfect for users who want a premium-looking product that can complement both contemporary and classic spaces.
+                </p>
+                
+                <button type="button" class="addCart" data-name="Marble White" data-price="74.00" data-image="images/product10.png">
+                    ADD TO CART
+                </button>
+
+            </div>
+
+            <div class="productImg">
+                
+                <img src="images/product10.png">
+
+            </div>
+
+       </section>
+
+    </main>
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-col footer-brand">
+                <h2 class="footer-logo">Breath Inc.</h2>
+                <p class="footer-tagline">
+                    Thoughtfully designed products, crafted with quality
+                    and comfort in mind.
+                </p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="customer-service/customer-service.html#contact">Contact Us</a></li>
+                    <li><a href="customer-service/customer-service.html#shipping">Shipping &amp; Returns</a></li>
+                    <li><a href="customer-service/customer-service.html#faq">FAQ</a></li>
+                    <li><a href="customer-service/customer-service.html#track">Track Order</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-newsletter">
+                <h3>Stay Updated</h3>
+                <p>Subscribe for exclusive offers and updates.</p>
+                <form class="newsletter-form" action="#">
+                    <label for="indexNewsletterEmail" class="sr-only">Your email</label>
+                    <input id="indexNewsletterEmail" type="email" placeholder="Your email" name="newsletter-email" required>
+                    <button type="submit" aria-label="Subscribe">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Breath Inc. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+    <script src="javascript_main/carousel-script.js"></script>
+    <script src="javascript_main/navbar-script.js"></script>
+    <script src="javascript_main/search-script.js"></script>
+    <script src="javascript_main/add-to-cart-script.js"></script>
+</body>
+</html>
